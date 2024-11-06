@@ -1,20 +1,17 @@
-# To-Do Application using AWS Lambda, API Gateway, DynamoDB, and a Simple Frontend
+# To-Do Application using AWS Lambda, API Gateway and DynamoDB
 
-This project is a simple To-Do application that uses AWS Lambda, API Gateway, and DynamoDB for the backend, with a basic frontend interface. It supports creating, reading, updating, and deleting (CRUD) todo items through RESTful API calls.
+This project is a simple To-Do application that uses AWS Lambda, API Gateway, and DynamoDB for the backend. It supports creating, reading, updating, and deleting (CRUD) todo items through RESTful API calls.
 
 ## Project Structure
 
 - **Backend**: AWS Lambda functions with API Gateway and DynamoDB
-- **Frontend**: Basic HTML, CSS, and JavaScript interface for interacting with the backend
-
 ---
 
 ## Table of Contents
 
 1. [Backend Setup](#backend-setup)
-2. [Frontend Setup](#frontend-setup)
-3. [Usage](#usage)
-4. [API Endpoints](#api-endpoints)
+2. [Usage](#usage)
+3. [API Endpoints](#api-endpoints)
 
 ---
 
@@ -46,27 +43,15 @@ This project is a simple To-Do application that uses AWS Lambda, API Gateway, an
 
    - Create a new API in API Gateway (REST API).
    - Set up routes and link each HTTP method (POST, GET, PUT, DELETE) to the corresponding Lambda function.
-   - Enable CORS on each endpoint for frontend communication.
 
 4. **Deploy the API**
 
    - Deploy the API in API Gateway to a stage (e.g., `dev`).
-   - Note the base URL of the deployed API (you’ll use this in the frontend).
+   - Note the base URL of the deployed API.
 
 ## Example Lambda Function Code
 
 The Lambda function code for creating, reading, updating, and deleting todos is provided in this repository.
-
-# Frontend Setup
-
-## Project Structure
-
-
-## Steps
-
-1. Clone this repository or download the frontend files.
-2. Open `script.js` and update the `apiUrl` variable with your API Gateway URL (e.g., `https://YOUR_API_ID.execute-api.YOUR_REGION.amazonaws.com/prod/todos`).
-3. Open `index.html` in a web browser to interact with your Todo API.
 
 # Usage
 
@@ -107,14 +92,6 @@ The Lambda function code for creating, reading, updating, and deleting todos is 
 4. **Delete Todo**
    - **Method**: `DELETE`
    - **Endpoint**: `/todos/{id}`
-
----
-
-# Future Improvements
-
-- Add authentication with AWS Cognito.
-- Create a more sophisticated frontend with frameworks like React or Vue.
-- Add input validation and error handling for a better user experience.
 
 ---
 
